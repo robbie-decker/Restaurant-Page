@@ -1,31 +1,11 @@
 import './style.css';
-import yellowBorder from './yellow_border.svg';
+import menuHTML from './menu';
+import contactHTML from './contact';
+import homeHTML from './home';
 
 const content = document.getElementById("content");
 
 const currentContent = document.createElement('div');
-
-
-const homeHTML = `
-    <div class="top_seperator"></div>
-    <div class="bottom_seperator"></div>
-    <div class="cut_container"></div>
-    <div class="cut_container" style="width: 42px;"></div>
-    <div class="black_container"></div>
-    <div class="gallery_container">
-        <span class= "gallery_item_arrow"></span>
-        <div class="myImg"></div>
-    </div>
-    <img class=yellow_border src=${yellowBorder} alt="Border Image">
-`;
-
-const menuHTML = `
-    <p>Here is the menu. Yum! </p>
-`;
-const contactHTML = `
-    <p>Here are some people</p>
-`;
-
 
 currentContent.innerHTML = homeHTML;
 
