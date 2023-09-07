@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: './src/imgs/ramen.svg',
+      favicon: './src/imgs/favicon.svg',
       template: './src/index.html',
       filename: './index.html'
     }),
