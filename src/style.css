@@ -1,3 +1,9 @@
+:root{
+    --lightBlue: #00F0FF;
+    --neonYellow: #fcee0a;
+    --cyberRed: #FC012A;
+}
+
 @font-face {
     font-family: "Cyberpunk";
     src: url('./fonts/CyberwayRiders.ttf');
@@ -6,6 +12,7 @@
 }
 
 body{
+    margin: 0;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -13,26 +20,33 @@ body{
 }
 
 nav{
+    /* background-color: var(--cyberRed); */
     width: 100vw;
-}
-
-nav #nav_menu{
+    height: 10vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-nav #nav_menu button{
-    margin: 0 20px;
+nav button{
+    /* margin: 0 20px; */
+    height: 8vh;
+    width: 100px;
+    font-size: 1.5rem;
 }
 
 h1{
     font-family: "Cyberpunk";
-    color: yellow;
-    stroke: green;
+    color: var(--neonYellow);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--lightBlue);
+    text-shadow: 2px 2px 5px rgba(0,240,255,0.85);
     font-size: 5rem;
+    margin: 20px 0;
 }
 
 #content{
+    width: min(60vw, 100vw);
    background-color: white;
    padding: 20px;
 }

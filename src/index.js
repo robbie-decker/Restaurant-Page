@@ -11,8 +11,8 @@ currentContent.innerHTML = homeHTML;
 
 content.appendChild(currentContent);
 
-const header = document.getElementById("nav_menu");
-for(let link of header.children){
+const nav = document.getElementById("nav_menu");
+for(let link of nav.children){
     link.addEventListener('click', () => {
         // Want to stop from running if the user reclicks the same button
         console.log("this is happening");
