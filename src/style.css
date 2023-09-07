@@ -1,4 +1,12 @@
+@font-face {
+    font-family: "Cyberpunk";
+    src: url('./fonts/CyberwayRiders.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
 body{
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,11 +25,17 @@ nav #nav_menu button{
     margin: 0 20px;
 }
 
-/* #content div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+h1{
+    font-family: "Cyberpunk";
+    color: yellow;
+    stroke: green;
+    font-size: 5rem;
+}
+
+#content{
+   background-color: white;
+   padding: 20px;
+}
 
 .top_seperator{
     background-image: linear-gradient(90deg,#000 28px,#fcee0a 0,
