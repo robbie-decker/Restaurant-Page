@@ -3,6 +3,13 @@ import menuHTML from './menu';
 import contactHTML from './contact';
 import homeHTML from './home';
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+}
+export { importAll };
+
 const content = document.getElementById("content");
 
 const currentContent = document.createElement('div');

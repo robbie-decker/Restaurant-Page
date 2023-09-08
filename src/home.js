@@ -11,10 +11,10 @@ const homeHTML = `
     <div id="location_container">
         <h2>Location</h2>
         <p>52 Kuroshio Avenue, JapanTown, Northern California</p>
-        <img src="${location}" alt="Map showing the location of Cyberpunks">
+        <img id="map" src="${location}" alt="Map showing the location of Cyberpunks">
     </div>
     
-    <div class="top_seperator"></div>
+    <!-- <div class="top_seperator"></div>
     <div class="bottom_seperator"></div>
     <div class="cut_container"></div>
     <div class="cut_container" style="width: 42px;"></div>
@@ -23,7 +23,7 @@ const homeHTML = `
         <span class= "gallery_item_arrow"></span>
         <div class="myImg"></div>
     </div>
-    <img class=yellow_border src=${yellowBorder} alt="Border Image">
+    <img class=yellow_border src=${yellowBorder} alt="Border Image"> -->
 `;
 
 export default homeHTML;

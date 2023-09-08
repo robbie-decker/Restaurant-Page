@@ -1,12 +1,6 @@
-function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-  }
+import {importAll} from "./index.js";
 
 const images = importAll(require.context('./imgs/food_and_drink', false, /\.(png|jpe?g|svg|webp)$/));
-console.log(images);
-console.log(images["eezybeef.webp"]);
 
 const menuHTML = `
     <h1>Menu</h1>

@@ -37,18 +37,41 @@ nav button{
 
 h1{
     font-family: "Cyberpunk";
+    background-color: black;
     color: var(--neonYellow);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--lightBlue);
-    text-shadow: 2px 2px 5px rgba(0,240,255,0.85);
+    text-shadow: 2px 2px 7px rgba(0,240,255,0.95);
     font-size: 5rem;
-    margin: 20px 0;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
 
 #content{
-    width: min(60vw, 100vw);
-   background-color: white;
-   padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: min(60vw, 100vw); */
+    background-color: var(--neonYellow);
+   /* padding: 20px; */
+}
+
+#map{
+    height: 200px;
+    width: 200px;
+}
+
+#contact_gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact_container img{
+    background-color: var(--lightBlue);
+    height: 200px;
+    width: 200px;
 }
 
 .top_seperator{
@@ -61,7 +84,8 @@ h1{
     background-repeat: no-repeat;
     background-size: 100% 2px,100% 28px;
     height: 28px;
-    width: 50vw;
+    width: 95%;
+    margin: 20px;
 }
 
 .bottom_seperator{
@@ -73,7 +97,8 @@ h1{
     background-repeat: no-repeat;
     background-size: 100% 26px,100% 28px;
     height: 28px;
-    width: 50vw;
+    width: 95%;
+    margin: 20px;
 }
 
 .cut_container{
