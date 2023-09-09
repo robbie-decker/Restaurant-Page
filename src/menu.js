@@ -9,6 +9,7 @@ const menuHTML = `
         <h3>AfterLife</h3>
         <div class="food_item">
             <p>Johnny SilverHand</p>
+            <div class="border"></div>
             <img src="${images['johnny.webp'].default}" alt="Johnny Silverhand drink">
             <p>- A tequila old fashioned with a splash of beer and a chili garnish. For the rockerboy who never gave up.</p>
         </div>
