@@ -16,6 +16,11 @@
     src:url('./fonts/Blender-Pro-Book.otf');
 }
 
+@font-face{
+    font-family: "Neon";
+    src:url('./fonts/NEON.TTF');
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -27,19 +32,29 @@ body{
 }
 
 nav{
-    /* background-color: var(--cyberRed); */
     width: 100vw;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 nav button{
     /* margin: 0 20px; */
+    font-family: "Neon";
     height: 8vh;
-    width: 100px;
-    font-size: 1.5rem;
+    width: 200px;
+    font-size: 2rem;
+    background-color: inherit;
+    color: var(--lightBlue);
+    filter: brightness(60%);
+    border: none;
+}
+
+nav button:hover{
+    filter: brightness(100%);
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px var(--lightBlue), 0 0 30px var(--lightBlue), 0 0 40px var(--lightBlue), 0 0 55px var(--lightBlue), 0 0 75px var(--lightBlue);
 }
 
 h1{
@@ -55,19 +70,51 @@ h1{
 }
 
 #content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* width: min(60vw, 100vw); */
     width: 100%;
     background-color: var(--neonYellow);
-   /* padding: 20px; */
 }
 
 #content div{
     width: 100%;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#food, #drinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: orange;
+    width: 50%;
+}
+
+.food_item img{
+    background-color: var(--cyberRed);
+    clip-path: polygon(0 85%, 0% 0px, 100% 0, 100% 100%, 15% 100%);
+}
+
+.cut_out{
+    border-left: 24px solid var(--neonYellow);
+    border-top: 24px solid transparent;
+    bottom: 24px;
+    display: block;
+    height: 0px;
+    position: absolute;
+    width: 24px;
+    z-index: 1;
 }
 
 #map{
@@ -177,17 +224,7 @@ h1{
     background-color: red;
 }
 
-.gallery_item_arrow{
-    border-left: 24px solid #ffffff;
-    border-top: 24px solid transparent;
-    bottom: 0px;
-    display: block;
-    height: 0px;
-    /* left: -1px; */
-    position: absolute;
-    width: 24px;
-    z-index: 1;
-}
+
 
 .yellow_border{
     width: 75vw;
