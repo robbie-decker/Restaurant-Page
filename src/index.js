@@ -13,6 +13,8 @@ export { importAll };
 const content = document.getElementById("content");
 
 const currentContent = document.createElement('div');
+var r = document.querySelector(':root');
+
 
 currentContent.innerHTML = homeHTML;
 currentContent.classList.add("home");
@@ -23,6 +25,9 @@ const nav = document.getElementById("nav_menu");
 for(let link of nav.children){
     link.addEventListener('click', () => {
         // Want to stop from running if the user reclicks the same button
+        for(let option of nav.children){
+            option.classList.remove("active");
+        }
         console.log("this is happening");
         content.removeChild(currentContent);
         currentContent.classList.remove("home");
@@ -32,14 +37,22 @@ for(let link of nav.children){
             case "home":
                 currentContent.innerHTML = homeHTML;
                 currentContent.classList.add("home");
+                link.classList.add("active");
+                r.style.setProperty('--current_color', 'var(--neonYellow)');
+                console.log(r);
                 break;
             case "menu":
                 currentContent.innerHTML = menuHTML;
                 currentContent.classList.add("menu");
+                link.classList.add("active");
+                r.style.setProperty('--current_color', 'var(--cyberRed)');
+                console.log(r);
                 break;
             case "contact":
                 currentContent.innerHTML = contactHTML;
                 currentContent.classList.add("contact");
+                link.classList.add("active");
+                r.style.setProperty('--current_color', 'var(--lightBlue)');
                 break;
         }
         content.appendChild(currentContent);     

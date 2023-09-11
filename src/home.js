@@ -7,11 +7,19 @@ const homeHTML = `
     <div class="yellow_border">
         <p class="loading_info">Home page loading...</p>
     </div>
-    <!-- <img class=yellow_border src=${yellowBorder} alt="Border Image"> -->
     <p id="intro">Hi choomba! Let me jack you into the deets on this joint. The ambiance at Cyberpunks is straight out of the Afterlife. You walk in, and it's like stepping into a slice of Night City itself. The nosh is to die for as well with the menu consisting of Night City's local cuisine. This is the kind of place where you'll create memories you'll want to wipe, just so you can experience it all over again. Cyberpunks has the Night City flavors you have been craving. Stay frosty, choomba!  
     <br>- Night city local</p>
-    <h2>Hours</h2>
-    <p>Blah blah</p>
+    <div class="hours">
+        <h2>Hours</h2>
+        <p>Sunday: 10am - 10pm</p>
+        <p>Monday: 12pm - 8pm</p>
+        <p>Tuesday: 12pm - 8pm</p>
+        <p>Wednesday: 12pm - 8pm</p>
+        <p>Thursday: 12pm - 8pm</p>
+        <p>Friday: 10am - 2am</p>
+        <p>Saturday: 10am - 2am</p>
+
+    </div>
     <div id="location_container">
         <h2>Location</h2>
         <p>52 Kuroshio Avenue, JapanTown, Northern California</p>
