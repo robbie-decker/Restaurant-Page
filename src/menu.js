@@ -3,6 +3,9 @@ import {importAll} from "./index.js";
 const images = importAll(require.context('./imgs/food_and_drink', false, /\.(png|jpe?g|svg|webp)$/));
 const menuHTML = `
 <h1>Menu</h1>
+<div class="yellow_border">
+    <p class="loading_info"> Menu loading...</p>
+</div>
     <div id="drinks">
         <h2>Drinks</h2>
         <h3>AfterLife</h3>

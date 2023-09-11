@@ -4,6 +4,9 @@ const images = importAll(require.context('./imgs/people', false, /\.(png|jpe?g|s
 
 const contactHTML = `
     <h1>Contact Us</h1>
+    <div class="yellow_border">
+        <p class="loading_info">Contact page loading...</p>
+    </div>
     <div class="top_seperator"></div>
     <div id="contact_gallery">
         <div class="contact_container">
