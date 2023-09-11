@@ -27,7 +27,7 @@ for(let link of nav.children){
         content.removeChild(currentContent);
         currentContent.classList.remove("home");
         currentContent.classList.remove("contact");
-        // currentContent.classList.remove("menu");
+        currentContent.classList.remove("menu");
         switch (link.id){
             case "home":
                 currentContent.innerHTML = homeHTML;
@@ -35,7 +35,7 @@ for(let link of nav.children){
                 break;
             case "menu":
                 currentContent.innerHTML = menuHTML;
-                // currentContent.classList.add("menu");
+                currentContent.classList.add("menu");
                 break;
             case "contact":
                 currentContent.innerHTML = contactHTML;

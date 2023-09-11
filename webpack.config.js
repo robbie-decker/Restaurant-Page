@@ -27,16 +27,18 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-        use: [
-          {
-            loader: 'file-loader', // or 'url-loader'
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images/',
-            },
-          },
-        ],
+          test: /\.(jpg|png|svg|gif|webp)$/,
+          type: 'asset/resource',
+        // test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        // use: [
+        //   {
+        //     loader: 'file-loader', // or 'url-loader'
+        //     options: {
+        //       name: '[name].[ext]',
+        //       outputPath: 'images/',
+        //     },
+        //   },
+        // ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
