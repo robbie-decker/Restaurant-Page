@@ -31,6 +31,9 @@ const menuHTML = `
             </div>
         </div>
     </div>
+    <div class="yellow_border" style="transform: rotate(.5turn);">
+        <p class="black_loading_info" >Food loading...</p>
+    </div>
     <div id="food">
         <h2>Food</h2>
         <h3>Buck-a-Slice</h3>
