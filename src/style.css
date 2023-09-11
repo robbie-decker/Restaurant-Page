@@ -23,6 +23,11 @@
     src:url('./fonts/NEON.TTF');
 }
 
+@font-face{
+    font-family: "refinery-25";
+    src:url('./fonts/refinery-25-bold.ttf')
+}
+
 body{
     margin: 0;
     font-family: "Blender";
@@ -104,6 +109,11 @@ h1{
     text-align: center;
 }
 
+h2, h3{
+    font-family: "refinery-25";
+    font-size: 2rem;
+}
+
 #content{
     width: 100%;
     background-color: var(--neonYellow);
@@ -137,6 +147,26 @@ h1{
     bottom: -16px;
     padding-left: 10px;
     margin: 0;
+}
+
+#home_info{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro{
+    background: linear-gradient(90deg,#000 2px,transparent 0) 0 0,linear-gradient(90deg,#000 2px,transparent 0) 0 100%,linear-gradient(270deg,#000 2px,transparent 0) 100% 0,linear-gradient(270deg,#000 2px,transparent 0) 100% 100%,linear-gradient(180deg,#000 2px,transparent 0) 0 0,linear-gradient(180deg,#000 2px,transparent 0) 100% 0,linear-gradient(0deg,#000 2px,transparent 0) 0 100%,linear-gradient(0deg,#000 2px,transparent 0) 100% 100%,linear-gradient(0deg,rgba(255,239,0,.161) 2px,transparent 0) 0 0,linear-gradient(180deg,rgba(255,239,0,.161) 2px,transparent 0) 0 0;
+    background-repeat: no-repeat;
+    background-size: 28px 28px,28px 28px,28px 28px,28px 28px,28px 28px,28px 28px,28px 28px,28px 28px,100% 100%,100% 100%;
+    padding: 0 20px;
+    margin: 6px;
+}
+
+.author{
+    text-align: right;
+    font-size: 1.5rem;
 }
 
 #food, #drinks{
