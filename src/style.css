@@ -142,6 +142,7 @@ h2{
     background-repeat: no-repeat;
     background-color: black;
     padding-bottom: 18px;
+    background-size: cover;
 }
 
 .black_border{
@@ -151,6 +152,7 @@ h2{
     background-repeat: no-repeat;
     background-color: black;
     padding-bottom: 18px;
+    background-size: cover;
 }
 
 .loading_info{
